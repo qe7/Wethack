@@ -8,14 +8,15 @@
 
 ## Table of Contents
 
-<summary>
+<details>
+  <summary>Click to expand</summary>
 
 * [What is Wethack?](#what-is-wethack)
 * [Requirements](#requirements)
 * [Contributing](#contributing)
 * [Credits](#credits)
 * [License](#license)
-</summary>
+</details>
 
 ## What is Wethack?
 
