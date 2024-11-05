@@ -8,18 +8,38 @@
 
 ## Table of Contents
 
-<details>
+<summary>
 
-- [What is Wethack?](#what-is-wethack)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
-</details>
+* [What is Wethack?](#what-is-wethack)
+* [Requirements](#requirements)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [License](#license)
+</summary>
 
 ## What is Wethack?
 
 Wethack is a simple client made for Minecraft version beta 1.7.3 that is created with the purpose of helping beginners to understand the basics of Minecraft clients.
+
+## Screenshots
+
+<details>
+  <summary>Click to expand</summary>
+
+> [!NOTE]
+> TODO: Add screenshots
+
+</details>
+
+## Examples
+
+<details>
+  <summary>Click to expand</summary>
+
+> [!NOTE]
+> TODO: Add examples
+
+</details>
 
 ## Requirements
 
