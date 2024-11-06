@@ -13,6 +13,7 @@ import org.lwjgl.input.*;
 import org.lwjgl.opengl.*;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.util.glu.GLU;
+import wethack.WetHack;
 
 // Referenced classes of package net.minecraft.client:
 //            MinecraftApplet
@@ -185,6 +186,11 @@ public abstract class Minecraft
         catch(Exception exception1) { }
         checkGLError("Post startup");
         ingameGUI = new GuiIngame(this);
+
+        // WETHACK - INIT
+        // This is where we initialize WetHack, reason for this is because we need to wait for the game to load before we can do anything.
+        WetHack.INSTANCE.init();
+
         if(serverName != null)
         {
             displayGuiScreen(new GuiConnecting(this, serverName, serverPort));
