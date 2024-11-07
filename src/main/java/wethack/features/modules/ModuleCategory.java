@@ -2,6 +2,9 @@ package wethack.features.modules;
 
 /**
  * Enum for the different categories of modules
+ * Enums use the casing convention of all uppercase with underscores
+ * This is because they are constants and should be treated as such
+ * (E.G. ModuleCategory.COMBAT)
  */
 public enum ModuleCategory {
     // Enum values for the different categories
@@ -13,6 +16,7 @@ public enum ModuleCategory {
     CLIENT("Client");
 
     // Variable for storing the name, we do this normally to avoid issues with obfuscation
+    // This is because the enum values are obfuscated, so we can't use them directly for getting the name
     private final String name;
 
     // Constructor to set the name of the category

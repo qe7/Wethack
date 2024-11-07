@@ -1,4 +1,4 @@
 package wethack.features.commands;
 
-public class CommandManager {
+public final class CommandManager {
 }
