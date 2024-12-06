@@ -21,6 +21,7 @@ public final class WetHack {
 
     // Method to initialize the client
     // This is called when the client is started, this is where you would put your initialization code
+    // Method is almost always called once Minecraft has finished initializing
     public void init() {
 
     }
