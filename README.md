@@ -20,7 +20,7 @@
 
 ## What is wethack?
 
-wethack is a simple client made for Minecraft version beta 1.7.3 that is created with the purpose of helping beginners to understand the basics of Minecraft clients.
+wethack is a simple client made for Minecraft version beta 1.7.3 that was created with the purpose of helping beginners to understand the basics of Minecraft clients.
 
 ## Requirements
 

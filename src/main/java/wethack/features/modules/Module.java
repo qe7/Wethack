@@ -1,5 +1,6 @@
 package wethack.features.modules;
 
+import wethack.WetHack;
 import wethack.features.commands.Command;
 
 public abstract class Module extends Command {
@@ -23,24 +24,16 @@ public abstract class Module extends Command {
     // The reason these aren't abstract is that not all modules will need to do something when toggled
     // For example, a module that only renders something doesn't need to do anything when toggled
     public void onEnable() {
-
+        WetHack.INSTANCE.getEventBus().register(this);
     }
 
     public void onDisable() {
-
+        WetHack.INSTANCE.getEventBus().unregister(this);
     }
 
     // Method for toggling the module, this will change the enabled state of the module
-    // If the module is enabled, it will call the onEnable method
-    // If the module is disabled, it will call the onDisable method
     public void toggle() {
-        enabled = !enabled;
-
-        if (enabled) {
-            onEnable();
-        } else {
-            onDisable();
-        }
+        this.setEnabled(!this.isEnabled());
     }
 
     // Getters for the category, keybind and enabled state of the module
@@ -78,5 +71,10 @@ public abstract class Module extends Command {
         } else {
             onDisable();
         }
+    }
+
+    @Override
+    public void execute(String[] args) {
+        // TODO: Write implementation for commands for modules
     }
 }
